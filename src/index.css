@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Noto Sans", "Noto Sans Devanagari", "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4efe6;
+  color: #1c1917;
+  overscroll-behavior: none;
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+a {
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #efe8dc;
+}
+::-webkit-scrollbar-thumb {
+  background: #c4b8a5;
+  border-radius: 4px;
+}
