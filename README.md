@@ -1,82 +1,36 @@
-# ScamGuard
+# ScamGuard 🛡️
 
-A digital safety assistant designed to help elderly citizens identify and avoid scams, fraud, and suspicious messages.
+A privacy-first, client-side digital safety assistant designed to help elderly citizens identify and avoid scams, fraud, and suspicious messages instantly.
 
-## Features
+**🔗 Live Demo:** [https://sanjaytechhub.github.io/Scam-Guard/](https://sanjaytechhub.github.io/Scam-Guard/)
 
-- **Real-time Scam Detection**: Analyze SMS messages, links, QR codes, and phone calls for potential fraud
-- **Bilingual Support**: Available in both English and Hindi for broader accessibility
-- **Family Dashboard**: Caregivers can monitor alerts and manage family safety
-- **Emergency Contacts**: Quick access to cyber helpline (1930) and emergency actions
-- **Voice Assistance**: Text-to-speech support for better accessibility
+## 📌 Problem Statement
+Elderly citizens are increasingly becoming targets of cyber frauds like fake KYC alerts, electricity bill scams, digital arrests, and reward QR codes. They often lack the technical knowledge to identify these threats, and existing tools are too complex for them to use.
 
-## Getting Started
+## 💡 Our Solution
+ScamGuard provides a simple, one-click solution. Users can paste a message, upload a screenshot, scan a QR code, or use voice input. The app analyzes it locally and gives a clear **HIGH RISK** or **SAFE** verdict with simple steps to follow.
+
+## ✨ Key Features
+- **Real-time Scam Detection:** Analyzes SMS, links, QR codes, and call transcripts using an advanced heuristic engine (supports both English and Hindi).
+- **Screenshot OCR:** Uses Tesseract.js to extract text from uploaded screenshots directly in the browser.
+- **QR Code Scanner:** Uses jsQR to scan QR codes from images without needing camera permissions.
+- **Voice Input:** Uses Web Speech API to let users speak their message instead of typing.
+- **Text-to-Speech:** "Read Aloud" feature for better accessibility.
+- **Scan History:** Saves the last 5 scans locally using browser `localStorage`.
+- **Privacy-First:** 100% client-side processing. No data is ever sent to a server or stored in the cloud.
+- **Bilingual Support:** Available in both English and Hindi.
+
+## 🛠️ Tech Stack
+- **Frontend:** React, TypeScript, Vite, Tailwind CSS
+- **Libraries:** Tesseract.js (OCR), jsQR (QR Scanning), Lucide React (Icons)
+- **Deployment:** GitHub Pages
+
+## 🚀 Getting Started
 
 ### Prerequisites
-
-- Node.js 18+ 
-- npm or yarn
+Make sure you have Node.js and npm installed.
 
 ### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/scamguard.git
-cd scamguard
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-### Build for Production
-
-```bash
-# Build the project
-npm run build
-
-# Deploy to GitHub Pages
-npm run deploy
-```
-
-## Usage
-
-1. **Check Messages**: Paste suspicious SMS, links, or messages into the checker
-2. **Select Type**: Choose the type of content (SMS, Link, QR, Call)
-3. **Get Analysis**: Receive instant risk assessment and safety recommendations
-4. **Family Support**: Share alerts with trusted family members
-5. **Emergency Help**: Quick access to cyber helpline and emergency actions
-
-## Technology Stack
-
-- **Frontend**: React + Vite
-- **Styling**: Tailwind CSS
-- **Deployment**: GitHub Pages
-- **Icons**: Material Symbols
-
-## Safety Tips
-
-- Never share UPI PIN to receive money
-- Banks never threaten immediate action via SMS
-- When in doubt, call family first
-- Verify suspicious messages through official channels
-- Call 1930 for cyber fraud assistance
-
-## Emergency Contacts
-
-- **National Cyber Helpline**: 1930
-- **Cyber Crime Portal**: https://cybercrime.gov.in
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License.
-
-## Disclaimer
-
-This tool is designed for educational purposes and to assist in identifying potential scams. Always verify through official channels and consult with family members before taking action.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SanjayTechHub/Scam-Guard.git
